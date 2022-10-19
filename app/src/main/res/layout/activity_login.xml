@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,11 +16,12 @@
         app:cardElevation="20dp"
         android:background="@drawable/custom_edittext">
 
-    <LinearLayout>
+    <TextView>
         android:layout_width="match_parent"
         android:layout_height="wrap_content
         android:orientation="vertical"
         android:layoiut_gravity="center_horizontal">
+    </TextView>
 
         <TextView
             android:layout_width="match_parent"
@@ -28,7 +29,16 @@
             android:text="Login"
             android:id="@+id/tvLogin"
             android:textSize="36sp"
-            android:text
+            android:textAlignmnt = "center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+    </TextView>
+
+    <EditText
+     android:layout_width="match_parent"
+     android:layout_height="50dp"
+
+     </EditText>
 
 
 
