@@ -17,6 +17,15 @@
        android:layout_marginTop="25dp"
        android:layout_marginEnd="25dp"
        android:layout_marginBottom="25dp"
-       android:src="@drawable/icon1" />
+       android:src="@drawable/icon1"
+       />
+
+   <ProgressBar
+       android:id="@+id/pbLoading"
+       style="?android:attr/progressBarStyle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/ivLogo"/>
+
 
 </RelativeLayout>
