@@ -20,7 +20,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content
         android:orientation="vertical"
-        android:layoiut_gravity="center_horizontal"
+        android:layoiut_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/tvLogin"
+            android:textSize="36sp"
+            android:text
 
 
 
