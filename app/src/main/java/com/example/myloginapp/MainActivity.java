@@ -2,8 +2,11 @@ package com.example.myloginapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
+import android.os.Handler;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,6 +17,13 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(this,LoginActivity.class);
+
+            }
+        },2000);
 
     }
 }
