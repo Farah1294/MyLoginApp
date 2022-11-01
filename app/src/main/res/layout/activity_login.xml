@@ -93,6 +93,21 @@
 
     </androidx.cardview.widget.CardView>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding = "80dp"
+        android:text = "Not yet registered?Sign Up Now!"
+        android:textSize="14sp0"
+        android:textAligment="center"
+        android:id="@+id/etSignUp"
+        android:textColor="@color/white"
+
+        >
+
+
+    </TextView>
+
 
 
 
