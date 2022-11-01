@@ -54,6 +54,7 @@
             </EditText>
 
             <EditText
+                android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/custom_edittext"
@@ -62,7 +63,6 @@
                 android:padding="8dp"
                 android:drawablePadding="8dp"
                 android:textColorHighlight="@color/cardview_dark_background"
-                android:id="@+id/etPassword"
                 android:inputType="textPassword"
                 android:textStyle="bold"
                 android:textColor="@color/black"
