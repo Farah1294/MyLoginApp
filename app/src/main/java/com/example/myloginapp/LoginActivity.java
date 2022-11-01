@@ -20,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
 
         username = findViewById(R.id.etUsername);
         pass = findViewById(R.id.etPassword);
-        loginBtn = findViewById(R.id.btnLogin)
+        loginBtn = findViewById(R.id.btnLogin);
 
         //Button click dia akn do something(listener listen and pbnggil method onclick)
         loginBtn.setOnClickListener(new View.OnClickListener() {
