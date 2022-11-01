@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".LoginActivity"
-    android:background="@color/white">
+    android:background="@color/clr1">
 
     <androidx.cardview.widget.CardView
 
@@ -50,7 +50,8 @@
                 android:id="@+id/etUsername"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:layout_marginTop="40dp">
+                android:layout_marginTop="40dp"
+                >
             </EditText>
 
             <EditText
@@ -76,7 +77,7 @@
                 android:textSize="18sp"
                 android:text="LOGIN"
                 android:layout_marginTop="30dp"
-                android:backgroundTint="@color/black"
+                android:backgroundTint="@color/clr3"
                 app:cornerRadius="20dp"
                 >
 
