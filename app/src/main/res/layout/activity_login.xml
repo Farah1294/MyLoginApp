@@ -16,7 +16,6 @@
         app:cardCornerRadius="30dp"
         app:cardElevation="20dp"
         android:background="@drawable/custom_edittext"
-
         >
 
         <LinearLayout
