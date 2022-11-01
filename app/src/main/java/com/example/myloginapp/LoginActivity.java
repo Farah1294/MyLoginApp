@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
     EditText username,pass;
@@ -28,8 +29,13 @@ public class LoginActivity extends AppCompatActivity {
                 //compare input adakah sma dngn hardcorder,check sma ke x,klau sma dngn data tu bru bleh login
                 //check username and pass
                 //usernme =usernm,pas == 1234,bru bleh log in
-                //toast messge
-                if(username.getText().toString().){
+                //toast messge//22 mesti true klau x dia pegi else
+                if(username.getText().toString().equals("user")&& pass.getText().toString().equals("1234")){
+                    Toast.makeText(LoginActivity.this,"Login Succesful!",Toast.LENGTH_SHORT).show();
+
+
+                }else{
+                    Toast.makeText(LoginActivity.this,"Login Failed!",Toast.LENGTH_SHORT).show();
 
                 }
             }
