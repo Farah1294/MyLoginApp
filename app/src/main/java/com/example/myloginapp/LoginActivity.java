@@ -9,8 +9,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
-    EditText username,pass;
-    Button loginBtn;
+    EditText etUsername,etPass;
+    Button btnLogIn;
 
 
     @Override
@@ -18,19 +18,19 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        username = findViewById(R.id.etUsername);
-        pass = findViewById(R.id.etPassword);
-        loginBtn = findViewById(R.id.btnLogin);
+        etUsername = findViewById(R.id.etUsername);
+        etPass = findViewById(R.id.etPass);
+        btnLogIn = findViewById(R.id.btnLogIn);
 
         //Button click dia akn do something(listener listen and pbnggil method onclick)
-        loginBtn.setOnClickListener(new View.OnClickListener() {
+        btnLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //compare input adakah sma dngn hardcorder,check sma ke x,klau sma dngn data tu bru bleh login
                 //check username and pass
                 //usernme =usernm,pas == 1234,bru bleh log in
                 //toast messge//22 mesti true klau x dia pegi else
-                if(username.getText().toString().equals("user")&& pass.getText().toString().equals("1234")){
+                if(etUsername.getText().toString().equals("user")&& etPass.getText().toString().equals("1234")){
                     Toast.makeText(LoginActivity.this,"Login Succesful!",Toast.LENGTH_SHORT).show();
 
 
@@ -42,4 +42,6 @@ public class LoginActivity extends AppCompatActivity {
         });
 
     }
+
+
 }
