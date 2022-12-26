@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -55,6 +56,7 @@ public class LoginActivity extends AppCompatActivity {
                 //check username and pass
                 //usernme =usernm,pas == 1234,bru bleh log in
                 //toast messge//22 mesti true klau x dia pegi else
+//                if(!email.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches())
                 if(username.equals("user")&& pass.equals("1234")){
 
                     Intent intent = new Intent(LoginActivity.this,MainActivity.class);
