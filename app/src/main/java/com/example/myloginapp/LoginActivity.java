@@ -66,19 +66,50 @@ public class LoginActivity extends AppCompatActivity {
                     //Toast.makeText(LoginActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
                 } else {
                     //Show Alert Dialog
-                    showAlertDialogButtonClicked();
+                    showAlertDialogButton();
                     //Toast.makeText(LoginActivity.this, "Login Fail,Please Try Again", Toast.LENGTH_SHORT).show();
                 }
+                if(username.isEmpty() && pass.isEmpty()){
+                    showAlertDialogButton2();
+                }
+                if(username.isEmpty() || pass.isEmpty()){
+                    showAlertDialogButton3();
+                }
+
             }
         });
 
     }
 
-    public void showAlertDialogButtonClicked() {
+    public void showAlertDialogButton() {
         // setup the alert builder
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Authentication Failed");
         builder.setMessage("Username and Password is Wrong,Please try Again!!");
+        // add a button
+        builder.setPositiveButton("OK", null);
+        // create and show the alert dialog
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+    public void showAlertDialogButton2() {
+        // setup the alert builder
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Log In Failed");
+        builder.setMessage("Username or Password is empty. Please fill in the blank!");
+        // add a button
+        builder.setPositiveButton("OK", null);
+        // create and show the alert dialog
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+    public void showAlertDialogButton3() {
+        // setup the alert builder
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Log In Failed");
+        builder.setMessage("Username and Password are empty. Please fill in the blanks!");
         // add a button
         builder.setPositiveButton("OK", null);
         // create and show the alert dialog
