@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
-        //Declare ID for widget
+        //Set Variable for Widget
         etUsername = findViewById(R.id.etUsername);
         etPass = findViewById(R.id.etPass);
         btnLogIn = findViewById(R.id.btnLogIn);
@@ -40,10 +40,10 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //Declare ID for widget
-                etUsername = findViewById(R.id.etUsername);
-                etPass = findViewById(R.id.etPass);
-                btnLogIn = findViewById(R.id.btnLogIn);
+//                //Declare ID for widget
+//                etUsername = findViewById(R.id.etUsername);
+//                etPass = findViewById(R.id.etPass);
+//                btnLogIn = findViewById(R.id.btnLogIn);
 
 
                 //get data from Edit Text
