@@ -11,8 +11,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
+    //Declare widget ID
     EditText etUsername,etPass;
     Button btnLogIn;
+
+    public final static String USERNAME = "com.example.myloginapp.USERNAME";
+
 
 
     @Override
@@ -20,21 +24,44 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
+        //Declare ID for widget
         etUsername = findViewById(R.id.etUsername);
         etPass = findViewById(R.id.etPass);
         btnLogIn = findViewById(R.id.btnLogIn);
+
+
+
+
 
         //Button click dia akn do something(listener listen and pbnggil method onclick)
         btnLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //Declare ID for widget
+                etUsername = findViewById(R.id.etUsername);
+                etPass = findViewById(R.id.etPass);
+                btnLogIn = findViewById(R.id.btnLogIn);
+
+
+                //get data from Edit Text
+                String username = etUsername.getText().toString();//msg hold username and convert to string
+                String pass = etPass.getText().toString();
+
+
+
                 //compare input adakah sma dngn hardcorder,check sma ke x,klau sma dngn data tu bru bleh login
                 //check username and pass
                 //usernme =usernm,pas == 1234,bru bleh log in
                 //toast messge//22 mesti true klau x dia pegi else
-                if(etUsername.getText().toString().equals("user")&& etPass.getText().toString().equals("1234")){
+                if(username.equals("user")&& pass.equals("1234")){
 
                     Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+
+                    //Send data
+                    intent.putExtra("USERNAME",username);
+
                     startActivity(intent);
                     //Toast.makeText(LoginActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
                 } else {
